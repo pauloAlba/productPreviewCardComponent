@@ -1,0 +1,126 @@
+:root{
+  font-size: 62.5%;
+  
+  /* PRIMARY */
+
+--Dark-cyan: hsl(158, 36%, 37%)
+--Cream: hsl(30, 38%, 92%)
+
+/* SECONDARY */
+
+--Very-dark-blue: hsl(212, 21%, 14%)
+--Dark-gray-sh-blue: hsl(228, 12%, 48%)
+--White: hsl(0, 0%, 100%)
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 215, 199);
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Very-dark-blue);
+  font-family: 'Fraunces', serif;
+  text-wrap: balance;
+}
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 50%;
+  min-width: 300px;
+}
+div span{
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color:  hsl(228, 12%, 48%);
+
+
+}
+img{
+  width: 100%;
+  min-width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+@media (min-width: 60rem) {
+  img{
+    width: 40%;
+    min-width: 200px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px 0 0px 10px;
+  }
+}
+
+section{
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: white;
+}
+section p{
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+section div{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;  
+}
+section div h3{
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+
+}
+section div h2{
+  color: hsl(158, 36%, 37%);
+  font-size: 3rem;
+}
+section button{
+  align-self: center;
+  padding: 20px 0;
+  width: 100%;
+  cursor: pointer;
+  background-color:hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  &:hover{
+    opacity: .7;
+  }
+}
+
+h1{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
